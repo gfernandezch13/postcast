@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/8ce35866bd.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/stylus.css" />
+    <title>Podcast Channel</title>
+    <link rel="icon" type="image/svg" href="./resources/icons/logo.svg" />
+  </head>
+  <body>
+    <header class="header-container">
+      <!-- <nav class="navbar-desktop flex justify-between align-center">
+        <img src="./resources/icons/logo.svg" alt="logo" />
+        <ul class="flex navbar-items">
+          <li class="navbar-item"><a href="#">EPISODIOS</a></li>
+          <li class="navbar-item"><a href="#">NOSOTROS</a></li>
+          <li class="navbar-item"><a href="#">ENTREVISTAS</a></li>
+          <li class="navbar-item"><a href="#">TÓPICOS</a></li>
+        </ul>
+      </nav> -->
+      <nav class="navbar flex justify-between align-center">
+        <img class="logo" src="./resources/icons/logo.svg" alt="logo" />
+        <div class="menu-hamburger">
+          <input class="input-menu" type="checkbox" name="input-menu" id="input-menu" />
+          <label class="icon-menu" for="input-menu">
+            <i class="fas fa-bars flex align-center"></i>
+          </label>
+          <label class="close" for="input-menu">
+            <img src="./resources/icons/close.svg" alt="close" />
+          </label>
+          <ul class="navbar-mobile-items">
+            <li class="navbar-item"><a href="#episodes">EPISODIOS</a></li>
+            <li class="navbar-item"><a href="#origins">NOSOTROS</a></li>
+            <li class="navbar-item"><a href="#stellar-guests">ENTREVISTAS</a></li>
+            <li class="navbar-item"><a href="#topics">TÓPICOS</a></li>
+          </ul>
+        </div>
+        <ul class="navbar-desktop-items">
+          <li class="navbar-item"><a href="#episodes">EPISODIOS</a></li>
+          <li class="navbar-item"><a href="#origins">NOSOTROS</a></li>
+          <li class="navbar-item"><a href="#stellar-guests">ENTREVISTAS</a></li>
+          <li class="navbar-item"><a href="#topics">TÓPICOS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="know-more">
+        <h1>Hello <span>world</span> pale blue dot <span>.</span></h1>
+        <p>
+          El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos
+          episodios, todos los jueves cada 15 días.
+        </p>
+        <button class="button">CONOCÉ MÁS</button>
+      </section>
+      <section class="episodes" id="episodes">
+        <h5>Episodios</h5>
+        <div class="podcasts-container">
+          <iframe
+            class="podcasts"
+            src="https://open.spotify.com/embed/episode/4Vpka1OHi7KhPhn1EQHJ3H?theme=0&amp;t=0"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+          <iframe
+            class="podcasts"
+            src="https://open.spotify.com/embed/episode/46EkZP04ZdgLKZ5NkA3YnC?t=0"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+          <iframe
+            class="podcasts"
+            src="https://open.spotify.com/embed/episode/32huW7EGrSzL1JuPK2njj9?t=0"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+          <iframe
+            class="podcasts"
+            src="https://open.spotify.com/embed/episode/2AdiMRm7jelr5toJbAiH5E?t=0"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+      </section>
+      <section class="origins" id="origins">
+        <img class="flex justify-center" src="./resources/images/phone.png" alt="mobile" />
+        <div>
+          <h5>De dónde venimos</h5>
+          <div class="parrafo">
+            <p>
+              Our posturings, our imagined self-importance, the delusion that we have some
+              privileged position in the Universe, are challenged by this point of pale light.
+            </p>
+            <p>
+              Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in
+              all this vastness, there is no hint that help will come from elsewhere to save us from
+              ourselves.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="stellar-guests" id="stellar-guests">
+        <h5>Invitadas/os estelares</h5>
+        <div>
+          <img src="./resources/images/grace-hopper.png" alt="" /><img
+            src="./resources/images/Katie-Bouman.png"
+            alt=""
+          /><img src="./resources/images/Margaret_Hamilton.png" alt="" /><img
+            src="./resources/images/univac-computer.png"
+            alt=""
+          /><img src="./resources/images/computer-operators.png" alt="" /><img
+            src="./resources/images/susan-kare.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="topics" id="topics">
+        <h5>Algunos de nuestros temas</h5>
+        <div class="figure-container">
+          <figure>
+            <img src="./resources/icons/remote-work.svg" alt="" />
+            <figcaption>Trabajo remoto</figcaption>
+          </figure>
+          <figure>
+            <img src="./resources/icons/rethinking-programming.svg" alt="" />
+            <figcaption>Repensando la programación</figcaption>
+          </figure>
+          <figure>
+            <img src="./resources/icons/code-bases.svg" alt="" />
+            <figcaption>Bases del código</figcaption>
+          </figure>
+          <figure>
+            <img src="./resources/icons/informatic-security.svg" alt="" />
+            <figcaption>Seguridad informática</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="news">
+        <h5>¿Querés las últimas novedades?</h5>
+        <button class="button">ESCUCHÁ LOS EPISODIOS</button>
+      </section>
+    </main>
+    <footer class="footer-container">
+      <div>© 2021— Hello blue pale dot</div>
+      <div class="social-media">
+        <a href="https://www.spotify.com/ar/" target="_blank">
+          <i class="fab fa-spotify"></i>
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://twitter.com/" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+
+        <a href="https://telegram.org/" target="_blank">
+          <i class="fab fa-telegram"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
